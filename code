@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    long long n, pc, dc;
+    
+    cin >> n;
+    
+    while(n > 9)
+    {
+        dc = n % 10;
+        n = n / 10;
+    }
+    
+    pc = n % 10;
+    
+    cout << pc + dc;
+    
+    return 0;
+}
